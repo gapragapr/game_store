@@ -1,0 +1,66 @@
+.favorite_game{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+.favorite_game_column:first-child{
+    width: 65%;
+    display: flex;
+}
+.favorite_game_column:first-child .favorite_game_column_block:last-child{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.favorite_game_column img{
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+}
+.favorite_game_name{
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.favorite_game_price{
+    font-weight: 700;
+    font-size: 32px;
+}
+.faorite_game_old_price{
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.2;
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.favorite_game_activation_info{
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+}
+.favorite_game_activation_info .grey_text{
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.favorite_game_column:last-child{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.favorite_game_column .svg_container{
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

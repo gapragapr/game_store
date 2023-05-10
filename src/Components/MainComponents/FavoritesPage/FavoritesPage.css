@@ -1,0 +1,25 @@
+.favorites_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.favorites_content{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.favorites_section_name{
+    width: 100%;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 35px;
+    
+}
+.favorites_game_count{
+    color: red;
+}
+.games_not_found{
+    margin-top: 240px;
+    margin-bottom: 240px;
+}

@@ -1,0 +1,15 @@
+.main_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main_content{
+    width: 1440px;
+}
+.game_in_favorites_arr{
+    background-color: red !important;
+}
+.game_in_favorites_arr path{
+    fill: #fff !important;
+}

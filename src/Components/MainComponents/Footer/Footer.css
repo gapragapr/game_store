@@ -1,0 +1,78 @@
+.footer_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+footer{
+    width: 1440px;
+}
+.footer_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.payment_systems{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.footer_row_block_name{
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 27px;
+}
+.store_info_link{
+    color: #CDCDCF;
+    font-weight: 400;
+    font-size: 19px;
+    text-decoration: none;
+    margin-bottom: 21px;
+    display: inline-block;
+}
+.footer_row_text{
+    color: #63686D;
+    font-weight: 400;
+    font-size: 15px;
+}
+.footer_row_keys_info{
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 41px;
+}
+.footer_row_last{
+    padding-top: 25px;
+    border-top: 1px solid #13101B;
+    justify-content: space-evenly;
+}
+.footer_row_link{
+    text-decoration: none;
+    color: #4277FF;
+    font-weight: 400;
+    font-size: 18px;
+}
+.footer_row_last .footer_row_text{
+    font-size: 18px;
+}
+.footer_row_socials{
+    display: flex;
+    align-items: center;
+}
+.social_item{
+    padding: 0 13px;
+}
+.social_item svg{
+    transition: 0.3s all ease-in;
+}
+/* .social_item path{
+    fill: rgba(255, 255, 255, 0.15);
+} */
+.social_item:hover path{
+    fill: rgba(119, 190, 29, 1);
+    fill-opacity: 1;
+}

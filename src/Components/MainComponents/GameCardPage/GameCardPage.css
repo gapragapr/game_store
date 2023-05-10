@@ -1,0 +1,143 @@
+.game_card_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.game_card{
+    width: 1440px;
+}
+.game_card_layer{
+    width: 100%;
+}
+.game_card_img.main_img{
+    width: 350px;
+    height: 475px;
+    object-fit: cover;
+    margin-right: 60px;
+    border-radius: 15px;
+
+}
+.game_card_row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 85px;
+}
+.game_card_row_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.game_name{
+    font-weight: 800;
+    font-size: 40px;
+}
+.game_price{
+    font-weight: 700;
+    font-size: 36px;
+}
+.game_buttons{
+    display: flex;
+    align-items: center;
+}
+.game_button{
+    padding: 25px 40px;
+    background: #77BE1D;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.game_buttons .svg_container{
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game_details{
+    display: flex;
+}
+.details_block{
+    margin-right: 75px;
+}
+.details_name{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.details_value{
+    font-weight: 600;
+    font-size: 20px;
+}
+.game_garant{
+    width: fit-content;
+    padding: 20px 25px;
+    color: #77BE1D;
+    font-weight: 400;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+.game_garant p{
+    cursor: default;
+}
+.screenshots{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.game_screenshot{
+    width: 25%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.game_card_info{
+    display: flex;
+    padding-bottom: 22px;
+    border-bottom:  1px solid #13101B;
+}
+.game_card_info li{
+    margin-right: 45px;
+    cursor: pointer;
+}
+.game_card_info_text{
+    font-weight: 400;
+    font-size: 22px;
+}
+.active_game_card_info_text{
+    padding-bottom: 22px;
+    border-bottom: 1px solid #fff;
+}
+.game_card_description{
+    font-weight: 400;
+    font-size: 17px;
+    color: #9D9AA6;
+}
+.game_card_description_name{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.game_card_activation_text{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #9D9AA6;
+}
+.game_card_activation_title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.nonactive_block{
+    display: none;
+}

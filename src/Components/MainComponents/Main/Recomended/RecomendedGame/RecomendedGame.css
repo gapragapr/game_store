@@ -1,0 +1,80 @@
+.recomended_game{
+    width: 33%;
+    padding: 120px 140px 130px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 15px;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    cursor: pointer;
+}
+.nonactive_recomended_game{
+    position:static;
+}
+.active_recomended_game{
+    position: relative;
+}
+.recomended_game::before{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    display: block  ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s all ease-in;
+}
+.recomended_game:hover::before{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.recomended_game_name{
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.recomended_game_description{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    -webkit-line-clamp: 3; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.recomended_game_price{
+    position: relative;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.recomended_game_button{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 25px 40px;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    transition: 0.3s all ease;
+}
+.recomended_game_button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.old_price{
+    font-weight: 600;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 25px;
+    text-decoration: line-through;
+}

@@ -1,0 +1,107 @@
+.cart_game{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+.cart_game_column:first-child{
+    width: 65%;
+    display: flex;
+}
+.cart_game_column:first-child .cart_game_column_block:last-child{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.cart_game_column img{
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+}
+.cart_game_name{
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.cart_game_price{
+    font-weight: 700;
+    font-size: 32px;
+}
+.cart_game_old_price{
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.2;
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.cart_game_activation_info{
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+}
+.cart_game_activation_info .grey_text{
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.cart_game_column:last-child{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart_game_column .svg_container{
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game_in_cart_count{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.game_in_cart_count p{
+    font-weight: 500;
+    font-size: 24px;
+}
+.game_in_cart_count .count_symbol{
+    color: #1D1E23;
+    font-size: 32px;
+    cursor: pointer;
+}
+.game_in_cart_count .count_symbol:hover{
+    transition: 0.3s all ease;
+    transform: scale(1.2);
+}
+.delete_game{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.delete_game_button{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+.delete_game_button svg{
+    width: 25px;
+    height: 25px;
+}
+.delete_game_button:hover svg{
+    transform: scale(1.1);
+    transition: 0.3s all ease;
+}
+.cart_game .svg_container:hover path{
+    transition: 0.3s all ease;
+    fill: red;
+}

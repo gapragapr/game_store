@@ -1,0 +1,19 @@
+.top_games_container{
+    width: 100%;
+    margin-top: 80px;
+}
+.top_games_content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.top_game_section_name{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.top_game_section_name svg{
+    width: 25px;
+    height: 25px;
+}

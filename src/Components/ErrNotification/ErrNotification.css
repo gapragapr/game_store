@@ -1,0 +1,26 @@
+.err_notification{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.err_text{
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: #77BE1D;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    animation: 1s 0.9s alternate errOpacity;
+}
+@keyframes errOpacity {
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
