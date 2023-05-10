@@ -61,7 +61,8 @@ function GameCardPage() {
   }
 
   function clickAddToCartButton() {
-    dispatch(addToCart({ game: game }));
+    const gameObj = { ...game, price: price };
+    dispatch(addToCart({ game: gameObj }));
     dispatch(setErr({ errText: "Игра добавлена в корзину" }));
   }
   function clickArrToFavotitesHandler() {
@@ -71,7 +72,8 @@ function GameCardPage() {
       favoritesRef.current.classList.remove("game_in_favorites_arr");
       dispatch(setErr({ errText: "Игра удалена из избранного" }));
     } else {
-      dispatch(addToFavorites({ game: game }));
+      const gameObj = { ...game, price: price };
+      dispatch(addToFavorites({ game: gameObj }));
       dispatch(setErr({ errText: "Игра добавлена в избранные" }));
     }
   }
@@ -97,7 +99,6 @@ function GameCardPage() {
                     {price ? `${price} ₽` : "Бесплатно"}{" "}
                   </p>
                   <div className="game_buttons">
-                    <button className="game_button">Купить</button>
                     <button
                       onClick={clickAddToCartButton}
                       className="game_button"
@@ -127,7 +128,7 @@ function GameCardPage() {
                     </div>
                     <div className="details_block">
                       <p className="details_name">Тип товара</p>
-                      <p className="details_value">Учетная запись</p>
+                      <p className="details_value">Ключ</p>
                     </div>
                   </div>
                   <div className="game_garant">

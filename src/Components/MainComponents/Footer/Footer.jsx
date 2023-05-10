@@ -132,16 +132,6 @@ export default function Footer() {
               {vectors.vk}
             </a>
           </li>
-          <li className="social_item">
-            <a href="" target={"_blank"} className="social_link">
-              {vectors.discord}
-            </a>
-          </li>
-          <li className="social_item">
-            <a href="" target={"_blank"} className="social_link">
-              {vectors.twitter}
-            </a>
-          </li>
         </ul>
       </div>
     </div>

@@ -107,6 +107,7 @@ header{
 .logo_container{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .logo_name{
     text-transform: uppercase;

@@ -37,6 +37,10 @@ export default function Header() {
         (svgArrow.style.transform = "rotate(180deg)"));
   }
 
+  function clickLogohandler() {
+    navigation("/");
+  }
+
   function clickFavoritesLinkHandler() {
     if (favorites.length > 0) {
       navigation("/favorites");
@@ -121,7 +125,7 @@ export default function Header() {
         </div>
         <div className="header_row">
           <div className="header_row_block">
-            <div className="logo_container">
+            <div onClick={clickLogohandler} className="logo_container">
               <img src={logo} alt="" />
               <p className="logo_name">ogre`s eye</p>
             </div>

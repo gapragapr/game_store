@@ -9,14 +9,14 @@ import "./FavoriteGame.css";
 function FavoriteGame({ game }) {
   const dispatch = useDispatch();
   const navigation = useNavigate();
-  console.log(game.old_price);
 
-  function clickDeleteFromFavoriteButtonHandler() {
+  function clickDeleteFromFavoriteButtonHandler(e) {
+    e.stopPropagation();
     dispatch(deleteFavorite({ game: game }));
   }
 
   function clickFavoriteCardHandler(e) {
-    e.preventDefault();
+    e.stopPropagation();
     navigation(`/games/${game.id}`);
   }
 
@@ -30,10 +30,10 @@ function FavoriteGame({ game }) {
           <div className="favorite_game_column_block_layer">
             <p className="favorite_game_name">{game.name}</p>
             <p className="favorite_game_price">
-              {game.price} ₽{" "}
-              {game.price && (
+              {game.price ? `${game.price} ₽` : "Бесплатно"}{" "}
+              {game.old_price && (
                 <span className="faorite_game_old_price">
-                  {game.old_price} ₽{" "}
+                  {`${game.old_price} ₽`}{" "}
                 </span>
               )}{" "}
             </p>
@@ -54,7 +54,7 @@ function FavoriteGame({ game }) {
       <div className="favorite_game_column">
         <div className="favorite_game_column_block_layer">
           <div
-            onClick={clickDeleteFromFavoriteButtonHandler}
+            onClick={(e) => clickDeleteFromFavoriteButtonHandler(e)}
             className="svg_container game_in_favorites_arr"
           >
             {vectors.like}

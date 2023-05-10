@@ -12,6 +12,7 @@ export const gameCardApi = createApi({
     }),
     getScreenshots: build.query({
       query: (id) => `games/${id}/screenshots?${apiKey}`,
+      cacheTime: 15 * 1000,
     }),
     getSystemRequirements: build.query({
       query: (id) => `games/${id}?${apiKey}`,

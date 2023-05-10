@@ -10,6 +10,7 @@ import { recomendedApi } from "./api/recomendedApi";
 import { topGamesApi } from "./api/topGamesApi";
 import { gameListApi } from "./api/gameListApi";
 import { gameCardApi } from "./api/gameCardApi";
+import { searchApi } from "./api/searchApi";
 
 export default configureStore({
   reducer: {
@@ -24,11 +25,13 @@ export default configureStore({
     [topGamesApi.reducerPath]: topGamesApi.reducer,
     [gameListApi.reducerPath]: gameListApi.reducer,
     [gameCardApi.reducerPath]: gameCardApi.reducer,
+    [searchApi.reducerPath]: searchApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware()
       .concat(recomendedApi.middleware)
       .concat(topGamesApi.middleware)
       .concat(gameListApi.middleware)
+      .concat(searchApi.middleware)
       .concat(gameCardApi.middleware),
 });

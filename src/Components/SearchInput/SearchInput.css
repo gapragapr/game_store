@@ -15,3 +15,12 @@
 header #search_input{
     width: 935px;
 }
+.active_search #search_input{
+    background-color: #fff;
+    color: black;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input_container{
+    position: relative;
+}

@@ -24,7 +24,8 @@ function CartGame({ game }) {
     });
   }, [favoritesArr]);
 
-  function clickDeleteFromFavoriteButtonHandler() {
+  function clickDeleteFromFavoriteButtonHandler(e) {
+    e.stopPropagation();
     if (svgRef.current.classList.contains("game_in_favorites_arr")) {
       svgRef.current.classList.remove("game_in_favorites_arr");
       dispatch(deleteFavorite({ game: game }));
@@ -34,6 +35,7 @@ function CartGame({ game }) {
   }
 
   function clickGameCardHandler(e) {
+    e.preventDefault();
     navigation(`/games/${game.id}`);
   }
 

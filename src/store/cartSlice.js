@@ -35,9 +35,6 @@ const cartSlice = createSlice({
             if (state.cart[findedIndex].count > 1) {
               state.cartCount--;
               state.cart[findedIndex].count--;
-            } else {
-              state.cartCount -= state.cart[findedIndex].count;
-              state.cart.splice(findedIndex, 1);
             }
           }
       }

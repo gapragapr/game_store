@@ -31,7 +31,7 @@ function Recomended() {
   function clickSliderArrowsHandler(e) {
     const slider = document.querySelector(".recomended_content");
 
-    if (e.target.id == "left-arrow") {
+    if (e.currentTarget.id == "left-arrow") {
       if (coords >= slider.offsetWidth) {
         setCoords((coords -= slider.offsetWidth));
         setSliderIndex(sliderIndex - 1);

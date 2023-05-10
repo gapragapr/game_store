@@ -5,6 +5,9 @@
 }
 .cart_content{
     width: 1440px;
+}
+.cart_content_row{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,4 +50,108 @@
     font-size: 24px;
     line-height: 130%;
 
+}
+.cart_content_row:last-child{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.payment_methods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.payment_method{
+    width: 49.5%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.payment_method_row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.payment_method_row img{
+    margin-right: 10px;
+}
+.payment_method_row:first-child{
+    margin-bottom: 120px;
+}
+.circle{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.payment_method_name{
+    font-weight: 500;
+    font-size: 24px;
+}
+.active_method{
+    border: 1px solid #77BE1D;
+    box-sizing: border-box;
+}
+.active_method .circle{
+    box-sizing: border-box;
+    border: 1px solid #77BE1D;
+    background-color: #77BE1D;
+}
+.email_input{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+.cart_content_row_column:last-child{
+    display: flex;
+    justify-content: center;
+}
+.payment_confirm_block{
+    width: 55%;
+    border: 1px solid #77BE1D;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.payment_count{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.payment_summ{
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.payment_accept{
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #77BE1D;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.payment_accept_text{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3);
 }

@@ -1,5 +1,5 @@
 .recomended_game{
-    width: 33%;
+    width: calc(49vw - 15px);
     padding: 120px 140px 130px 140px;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@
     background-position: center;
     z-index: 2;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .nonactive_recomended_game{
     position:static;
