@@ -9,8 +9,6 @@ function HeaderPopup() {
   const dispatch = useDispatch();
 
   function clickPopupContainer(e) {
-    e.stopPropagation();
-    e.preventDefault();
     dispatch(setNeedPopup({ option: false }));
     dispatch(setPopupText({ popupText: null }));
   }
