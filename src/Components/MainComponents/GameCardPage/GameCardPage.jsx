@@ -82,7 +82,7 @@ function GameCardPage() {
     <>
       <Header />
       <div className="game_card_container">
-        {game && (
+        {game && screenshots && (
           <div className="game_card">
             <div className="game_card_layer">
               <div className="game_card_row">
@@ -138,8 +138,8 @@ function GameCardPage() {
               </div>
               <div className="game_card_row">
                 <div className="screenshots">
-                  {screenshots &&
-                    screenshots.map((item) => {
+                  {screenshotsData.status == "fulfilled" &&
+                    screenshotsData.data.results.map((item) => {
                       return (
                         <img
                           key={item.id}

@@ -131,7 +131,7 @@ const vectors = {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M6 1L2 5L6 9" stroke="white" stroke-width="2" />
+      <path d="M6 1L2 5L6 9" stroke="white" strokeWidth="2" />
     </svg>
   ),
   right_arrow: (
@@ -142,7 +142,7 @@ const vectors = {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M0.999999 9L5 5L1 1" stroke="white" stroke-width="2" />
+      <path d="M0.999999 9L5 5L1 1" stroke="white" strokeWidth="2" />
     </svg>
   ),
   topGame: (

@@ -6,6 +6,7 @@ import topGamesSlice from "./topGamesSlice";
 import gameListSlice from "./gameListSlice";
 import errorSlice from "./errorSlice";
 import gameCardSlice from "./gameCardSlice";
+import popupSlice from "./popupSlice";
 import { recomendedApi } from "./api/recomendedApi";
 import { topGamesApi } from "./api/topGamesApi";
 import { gameListApi } from "./api/gameListApi";
@@ -21,6 +22,7 @@ export default configureStore({
     gamesList: gameListSlice,
     err: errorSlice,
     gameCard: gameCardSlice,
+    popup: popupSlice,
     [recomendedApi.reducerPath]: recomendedApi.reducer,
     [topGamesApi.reducerPath]: topGamesApi.reducer,
     [gameListApi.reducerPath]: gameListApi.reducer,
